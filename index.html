@@ -11,8 +11,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="container flex" aria-label="Main Navigation">
+    <header class="flex">
+      <nav class="container flex wrapper" aria-label="Main Navigation">
         <a href="#profile" class="home font18">Semjo info</a>
         <div class="flex">
           <a href="#goals">Goals</a>
@@ -24,7 +24,7 @@
     <main class="flex">
       <section
         id="profile"
-        class="container flex"
+        class="container flex wrapper"
         aria-labelledby="profile-heading">
         <div class="images-container flex">
           <img
@@ -62,7 +62,7 @@
       </section>
       <section
         id="goals"
-        class="container flex"
+        class="container flex wrapper"
         aria-labelledby="goals-heading">
         <div class="text-container">
           <h2 id="goals-heading" class="font25 pbot20">
@@ -101,7 +101,9 @@
     </main>
 
     <footer class="flex">
-      <section class="contacts-links flex" aria-labelledby="useful-links">
+      <section
+        class="contacts-links flex wrapper"
+        aria-labelledby="useful-links">
         <div class="links">
           <h2 class="font25 pbot20">Useful Links</h2>
           <ul>
@@ -177,7 +179,7 @@
       </section>
       <section
         id="current-info"
-        class="container current-info flex"
+        class="container current-info flex wrapper"
         aria-labelledby="current UTC time and day">
         <span data-testid="currentTimeUTC" id="time-utc"></span>
         <span data-testid="currentDay" id="day-of-week"></span>
